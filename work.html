@@ -117,12 +117,10 @@ p {
   h2 {
     font-size: 44px;
   }
-  .about-section {
-    text-align: center;
-    padding: 0;
-    margin-top: 0;
-  }
-  
+  .content {
+  text-align: center;
+  padding: 0;
+}
   .hero  h2{
     padding: 80px 20px;
     font-family: var(--heading-font-family);
@@ -130,19 +128,29 @@ p {
     line-height: 1.5;
     font-size: 24px;
   }}
-  .about-section {
+  .content-container {
     padding: 160px 20px;
   }
-  .about-section h1 {
+  .content h1 {
   font-size: 64px;
   line-height: 80px;
 }
-.about-section h2 {
+.content h2 {
   font-size: 18px;
   font-family: var(--default-font-family);
 }
-.about-section-content {
+.content-container {
   margin: 30px;
+}
+.content h3{
+font-size: 24px;
+font-family: var(--default-font-family);
+line-height: 1.5;
+
+}
+.content p {
+  font-size: 14px;
+  
 }
 .btn-branding {
   background: var(--branding-color);
@@ -161,23 +169,33 @@ p {
  </style>
 </head>
 <body>
-  <div class="about-section" style="margin-top: 0; padding-top: 45px;">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="about-section-content">
-  <h1 class="mb-5">Hi, I am Isha Fazli</h1>
-  <h2 class="mb-4">Frontend Developer, based in America.</h2>
-  <p class="mb-4">I began this technological journey when I got an 
-    interest in how webpages are created. I have gained 
-    knowledge and hands-on experience thanks to many resources. I have since advanced in programming.
-     I love developing new websites and hope to use my skills to benefit companies!</p>
-    <a href="View my projects" class="btn btn-branding">View my projects</a>
+  <div class="content-container container">
+        <div class="content">
+  <h1 class="mb-5">Take a look at what 
+    I have been working on!
+  </h1>
+  <div class="row">
+    <div class="col-md-6 mb-4">
+      <img src="favorite food or drink pic.png" alt="my favorite food"
+      class="img-fluid mb-3 rounded">
+      <h3 class="text-center m-0">Yogurt Project</h3>
+      <p class="text-center text-muted">Built with HTML and CSS</p>
+    </div>
+    <div class="col-md-6 mb-4">
+      <img src="weather app pic.png" alt="responsive weather app"
+      class="img-fluid mb-3 rounded">
+      <h3 class="text-center m-0">Weather App</h3>
+      <p class="text-center text-muted">Built with HTML, CSS, 
+        and JavaScript</p>
+    </div>
+    <div class="col-md-6 mb-4">
+      <img src="hobby pic.png" alt="my favorite hobby"
+      class="img-fluid mb-3 rounded">
+      <h3 class="text-center m-0">Yoga Project</h3>
+      <p class="text-center text-muted">Built with HTML and CSS</p>
+    </div>
   </div>
-</div>
-    <div class="col-lg-6">
-      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/094/106/original/IMG_0044.jpg?1692575291"
-       alt="My picture" class="img-fluid" style="height: 450px; width: 380px; margin-top: 40px; border-radius: 20px;">    
-      </div>
+ 
       </div>
     </div>
 </body>
