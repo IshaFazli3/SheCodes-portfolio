@@ -25,10 +25,9 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://kit.fontawesome.com/ddc3ee268a.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    src="https://kit.fontawesome.com/ddc3ee268a.js"
+    crossorigin="anonymous"
+  ></script>
 
     <style>
       :root {
@@ -161,22 +160,45 @@ nav a {
 nav a:hover, nav li.active a  {
   color: var(--branding-color);
 }
-footer .email-link {
-text-decoration: none;
-color: black;
-font-size: 24px;
-text-align: center;
-}
-footer .email-link:hover {
-  color: var(--branding-color);
-}
 footer {
   margin: 60px 0;
 }
-footer .social-links img {
-  margin: 30px 20px 0 0; 
+
+footer .contact-box {
   background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
   font-size: 18px;
+  transition: all 100ms ease-in-out;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
 }
 footer .contact-box {
   background: var(--secondary-color);
@@ -280,12 +302,21 @@ footer .contact-box {
         class="email-link">
           ishafazli3@gmail.com
         </a>
-      </div>
-        <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/isha-f-28b060252/"><img src="In-Blue-21.png" width="24px"></a>
-        <a href="https://github.com/IshaFazli3"><img src="github-mark.png" width="25px"></a>
-      </div>
+        </div>
       
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.github.com/IshaFazli3" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instragram.com/booksbyishaf" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/isha-f-28b060252/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+
       </footer>
     </div>
   </body>
