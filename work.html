@@ -40,24 +40,12 @@ body {
   font-family: var(--default-font-family);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: black;
-  font-family: var(--heading-font-family);
-  font-weight: bold;
-}
-
 h1 {
   font-size: 96px;
   line-height: 1.5;
-}
-
-h2 {
-  font-size: 64px;
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
 }
 
 p {
@@ -66,43 +54,6 @@ p {
   line-height: 30px;
 }
 
-.hero {
-  background: var(--secondary-color);
-  text-align: center;
-  padding: 160px 20px;
-}
-
-.hero p {
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0;
-  color: #272142;
-}
-
-.hero h2 {
-  font-family: var(--heading-font-family);
-  font-weight: normal;
-  line-height: 1.5;
-  font-size: 24px;
-}
-
-.btn-branding {
-  background: var(--branding-color);
-  border-radius: 4px;
-  color: white;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-}
-
-.btn-branding-outline {
-  color: var(--branding-color);
-  border: 1px solid var(--branding-color);
-  border-radius: 4px;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-}
 
 .project-desciption {
   padding: 120px 60px;
@@ -121,13 +72,7 @@ p {
   text-align: center;
   padding: 0;
 }
-  .hero  h2{
-    padding: 80px 20px;
-    font-family: var(--heading-font-family);
-    font-weight: normal;
-    line-height: 1.5;
-    font-size: 24px;
-  }}
+ }
   .content-container {
     padding: 160px 20px;
   }
@@ -135,14 +80,17 @@ p {
   font-size: 64px;
   line-height: 80px;
 }
-.content h2 {
+.content {
   font-size: 18px;
   font-family: var(--default-font-family);
 }
 .content-container {
   margin: 30px;
+  margin-top: 0;
+  padding-top: 100px;
+
 }
-.content h3{
+.content{
 font-size: 24px;
 font-family: var(--default-font-family);
 line-height: 1.5;
@@ -152,23 +100,48 @@ line-height: 1.5;
   font-size: 14px;
   
 }
-.btn-branding {
-  background: var(--branding-color);
-  border-radius: 4px;
-  color: white;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 15px 30px;
-}
   .project-desciption {
     padding: 0;
     text-align: center;
   }
+  nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in;
+}
+nav a:hover, nav li.active a  {
+  color: var(--branding-color);
+}
 
 
  </style>
 </head>
 <body>
+  <div class="contianer">
+    <nav class="d-flex justify-content-between">
+  <ul>
+    <li class="active">
+      <a href="index.html" style="margin-left: 30px;">Home</a></li>
+    <li><a href="about-me.html">About</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+</nav>
+
   <div class="content-container container">
         <div class="content">
   <h1 class="mb-5">Take a look at what 
@@ -199,3 +172,4 @@ line-height: 1.5;
       </div>
     </div>
 </body>
+</html>

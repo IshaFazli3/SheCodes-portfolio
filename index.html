@@ -28,7 +28,7 @@
       src="https://kit.fontawesome.com/ddc3ee268a.js"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
       :root {
@@ -61,7 +61,9 @@ h1 {
 h2 {
   font-size: 64px;
 }
-
+h4 {
+  font-size: 48px;
+}
 p {
   font-weight: normal;
   font-size: 16px;
@@ -72,6 +74,8 @@ p {
   background: var(--secondary-color);
   text-align: center;
   padding: 160px 20px;
+  margin-top: 0;
+  padding-top: 80px;
 }
 
 .hero p {
@@ -131,7 +135,11 @@ p {
     padding: 0;
     text-align: center;
   }
+  h4 {
+    font-size: 18px;
+  }
 }
+
 nav {
   padding: 20px 0;
 }
@@ -153,7 +161,29 @@ nav a {
 nav a:hover, nav li.active a  {
   color: var(--branding-color);
 }
-
+footer .email-link {
+text-decoration: none;
+color: black;
+font-size: 24px;
+text-align: center;
+}
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+footer {
+  margin: 60px 0;
+}
+footer .social-links img {
+  margin: 30px 20px 0 0; 
+  background: var(--secondary-color);
+  font-size: 18px;
+}
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;;
+  border-radius: 10px;
+  margin: 0;
+}
     </style>
   </head>
   <body>
@@ -232,6 +262,31 @@ nav a:hover, nav li.active a  {
           </div>
         </div>
       </div>
+      <footer>
+        <div class="contact-box d-flex justify-content-between 
+        mb-5 d-none d-md-flex">
+          <div>
+          <h4>Work Inquiry</h4>
+          <p class="text-muted">Let's work together</p>
+        </div>
+          <div>
+          
+          <a href="" class="btn btn-branding mt-5">Contact me</a>
+        </div>
+        </div>
+       
+          <div class="d-flex justify-content-center">
+        <a href="mailto:ishafazli3@gmail.com"
+        class="email-link">
+          ishafazli3@gmail.com
+        </a>
+      </div>
+        <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/isha-f-28b060252/"><img src="In-Blue-21.png" width="24px"></a>
+        <a href="https://github.com/IshaFazli3"><img src="github-mark.png" width="25px"></a>
+      </div>
+      
+      </footer>
     </div>
   </body>
 </html>
