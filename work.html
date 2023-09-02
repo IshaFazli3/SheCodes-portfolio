@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SheCodes Portfolio</title>
+    <meta name="description" content="View Isha Fazli best projects, front-end engineer based in America">
+    <title>My work - Isha Fazli Front-end developer projects</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
@@ -125,6 +126,62 @@ nav a {
 nav a:hover, nav li.active a  {
   color: var(--branding-color);
 }
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+
+}
+
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
+}
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;;
+  border-radius: 10px;
+  margin: 0;
+}
 
 
  </style>
@@ -133,10 +190,10 @@ nav a:hover, nav li.active a  {
   <div class="contianer">
     <nav class="d-flex justify-content-between">
   <ul>
-    <li class="active">
+    <li>
       <a href="index.html" style="margin-left: 30px;">Home</a></li>
     <li><a href="about-me.html">About</a></li>
-    <li><a href="work.html">Work</a></li>
+    <li class="active"><a href="work.html">Work</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </div>
@@ -171,5 +228,42 @@ nav a:hover, nav li.active a  {
  
       </div>
     </div>
+    <footer class="container">
+      <div class="contact-box d-flex justify-content-between 
+      mb-5 d-none d-md-flex">
+        <div>
+        <h3>Work Inquiry</h3>
+        <p class="text-muted">Let's work together</p>
+      </div>
+        <div>
+        
+        <a href="contact.html" class="btn btn-branding mt-5"
+        title="contact-Isha">Contact me</a>
+      </div>
+      </div>
+     
+        <div class="d-flex justify-content-center">
+      <a href="mailto:ishafazli3@gmail.com"
+      class="email-link">
+        ishafazli3@gmail.com
+      </a>
+      </div>
+    
+    <div class="social-links d-flex justify-content-center">
+      <a href="https://www.github.com/IshaFazli3" target="_blank" title="GitHub profile">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/booksbyishaf" target="_blank" title="Instagram profile">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/isha-f-28b060252/" target="_blank" title="Linkedin profile">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+<p class="text-center mt-5">⭐This project was coded by Isha F, 
+  and it is <a href="https://github.com/IshaFazli3/SheCodes-portfolio"
+  alt="github-portfolio-code" target="_blank" title="github portfolio code">open-sourced</a></p>
+
+    </footer>
 </body>
 </html>
