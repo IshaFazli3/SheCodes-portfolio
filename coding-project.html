@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobby</title>
+
+  <style>
+    body {
+      background: linear-gradient(to left, rgb(98, 187, 180), white, rgb(160, 194, 221));
+    }
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+    img {
+      max-width: 100%;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      border: 1px solid plum;
+      background: white;
+      font-size: 20px;
+      border-radius: 6px;
+      padding: 10px 15px;
+      transition: all 150ms ease-in-out;
+    }
+    button:hover {
+      background: pink;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      margin: 16px 0;
+      font-size: 18px;
+
+    }
+    .theme-btn {
+      font-size: 13px;
+      background: black;
+      color: white;
+      
+    }
+    .theme-btn:hover {
+      color: black;
+      background: white;
+    }
+    .coding-intro-pic {
+      border-radius: 10px;
+      transition: all 150ms ease-in-out;
+      
+    }
+    .coding-intro-pic:hover {
+      filter: contrast(50%);
+      transform: scale(1.1);
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .grid {
+      margin: 20px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+    }
+    .grid img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .dark {
+      background: linear-gradient(to top, blue, black);
+      color: rgb(61, 64, 102);
+    }
+    .dark .container {
+      background: rgba(255, 255, 255, 0.8);
+    }
+    .dark a {
+      color: plum;
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-btn">Dark Theme</button>
+  <div class="container">
+  <h1>Coding</h1>
+  <h2>My favorite Hobby</h2>
+  <div class="grid">
+    
+ <a href="https://code.org/learn" target="_blank"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/093/511/original/someone_coding_pic_1.jpg?1692070946" alt="someone coding"
+  class="coding-intro-pic"></a>
+ <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/139/original/coding_wallpaper.png?1689473175" alt="coding quote">
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/140/original/wp2234555-coding-wallpapers.jpg?1689473330" alt="cloud raining code">
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/141/original/wp2234639.jpg?1689473390" alt="cool coding pic">
+  </div>
+  <p>"Coding meaning can vary depending on the context. 
+    In computer science, coding means creating and maintaining the 
+    source code of computer programs. Source code is a set of 
+    instructions for the computer to behave as desired. 
+    Coding is the process of transforming ideas, solutions, 
+    and instructions into the language that the computer can 
+    understand, such as binary-machine code. Coding is used to program
+     the websites, apps, and other technologies we 
+     interact with every day."</p>
+     <button class="learncode-btn">Learn Coding</button>
+    </div>
+     <footer>
+      Coded by Isha Fazli for 
+      <a href="https://www.shecodes.io/" target="_blank">SheCodes</a>
+     </footer>
+     <script>
+  function changeTheme(){
+    let body = document.querySelector("body");
+    if (body.classList.contains("dark")) {
+      body.classList.remove("dark");
+    } else {
+      body.classList.add("dark");
+    }
+    //body.classList.toggle("dark");
+  }
+
+      let themeBtn = document.querySelector(".theme-btn");
+      themeBtn.addEventListener("click", changeTheme);
+
+ function learncode(){
+  let buttton = document.querySelector(".learncode-btn");
+  prompt("What is your email?");
+  alert("Welcome, we will send you an email soon!");
+ }
+ let buton = document.querySelector(".learncode-btn");
+ buton.addEventListener("click", learncode);
+      
+     </script>
+</body>
+</html>
