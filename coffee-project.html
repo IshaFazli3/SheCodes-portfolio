@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love Coffee!</title>
+    <style>
+       div {
+      width: 600px;
+      height: 1030px;
+      display: block;
+      margin: 0 auto;
+      padding: 10px;
+      background:linear-gradient(to left,#c9b195, rgb(179, 85, 85));
+      border-radius: 50px;
+      box-shadow: 4px 4px 4px rgb(209, 200, 200);
+    }
+  h1 {
+        text-align: center;
+        font-size: 40px;
+        border-color:rgb(112, 74, 74);
+        border-style: solid;
+        border-radius: 20px;
+         border-width: 2px;
+        letter-spacing: 3px;
+        color: rgb(0, 0, 0);
+
+
+    }
+    h2 {
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    p {
+        text-align: center;
+        font-size: 17px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        padding: 10px 10px 0 10px;
+        
+    }
+    button {
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 15px;
+        border-color: rgb(75, 30, 30);
+        border-style: solid;
+        color: white;
+        background-color:rgb(56, 22, 22);
+        display: block;
+        margin: 0 auto;
+        font-family:'Times New Roman', Times, serif;
+        width: 200px;
+        transition: all 0.15s ease;
+    }
+    button:hover {
+        opacity: 0.90;
+        cursor: pointer;
+    }
+    button:active {
+        opacity: 0.80;
+    }
+    a {
+        color: rgb(211, 193, 193);
+        padding-left: 10px;
+        
+    
+    }
+    </style>
+   
+</head>
+<body>
+    <div>
+    <h1>I love Starbucks Coffee!</h1>
+    <h2>My to-go is Caramel Ribbon Crunch</h2>
+    <hr>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/801/original/Starbuck_coffe.jfif?1688783908" alt="Starbuck coffee"
+    width="300px"; height="500px";>
+    <br>
+    <hr>
+    <P><strong><em>Buttery caramel syrup blended with coffee, milk & ice, 
+        then topped with whipped cream.</em></strong></P>
+        <p>Frappuccino is a line of blended iced coffee drinks sold by Starbucks. 
+            It may consist of coffee or crème base, blended with ice and ingredients 
+            such as flavored syrups and usually topped with whipped cream and or spices. 
+            It may also include blended Starbucks refreshers. Frappuccinos are also 
+            sold as bottled coffee beverages in grocery stores, 
+            convenience stores and from vending machines.</p>
+            <a href="https://en.wikipedia.org/wiki/Frappuccino" target="_blank">Visit Wikipedia</a>
+            <br>
+            <a href="https://www.starbucks.com/menu/product/1044/iced" target="_blank">Starbucks Coffee</a>
+            <br>
+            <button>Try This Coffee!</button>
+            </div>
+            <script>
+              function coffeeButton(){
+              let name=prompt("What is your first name?");
+              let email=prompt("What is your email?");
+              alert("Thank you " + name + ", we will stay in contact!😁 ");
+              
+              }
+  
+              let coffeeButto=document.querySelector("button");
+              coffeeButto.addEventListener("click", coffeeButton);
+  
+          </script>
+      
+</body>
+</html>
